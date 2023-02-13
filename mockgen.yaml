@@ -23,18 +23,18 @@ mocks:
   # By convention, the filename containing generated mocks should be `mocks_test.go`.
   - filename: internal/db/mocks_test.go
     sources:
-      - path: gogs.io/gogs/internal/db
+      - path: gogs.io/gogs/pkg/db
         interfaces:
           - LoginSourcesStore
           - LoginSourceFilesStore
           - LoginSourceFileStore
           - loginSourceFileStore
-      - path: gogs.io/gogs/internal/auth
+      - path: gogs.io/gogs/pkg/auth
         interfaces:
           - Provider
   - filename: internal/route/lfs/mocks_test.go
     sources:
-      - path: gogs.io/gogs/internal/db
+      - path: gogs.io/gogs/pkg/db
         interfaces:
           - LFSStore
           - UsersStore

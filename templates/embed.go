@@ -16,7 +16,7 @@ import (
 
 	"gopkg.in/macaron.v1"
 
-	"gogs.io/gogs/internal/osutil"
+	"gogs.io/gogs/pkg/osutil"
 )
 
 //go:embed *.tmpl **/*
